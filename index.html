@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    
+    <title>Livestream</title>
+
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+  </head>
+
+  <body>
+    <div class="stream  clearfix">
+      <div class="stream__watch">
+        <div class="watch__video">
+          <div class="videoWrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7GElP4YdrBE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div><!-- .videoWrapper -->
+        </div><!-- .watch__video -->
+
+        <div class="watch__info">
+          <h2 class="watch__info__title">
+            <small>Je kijkt naar:</small>
+            Live Lounge Allstars - Times Like These (BBC Radio 1 Stay Home Live Lounge)
+          </h2>
+        </div><!-- .watch__info -->
+      </div><!-- .stream__watch -->
+
+      <div class="stream__interact" id="js-tabs">
+        <div class="interact__nav  clearfix">
+          <a class="interact__nav__item  js-tab-link active" href="#">Chat</a>
+          <a class="interact__nav__item  js-tab-link" href="#">Stellingen</a>
+        </div><!-- .interact__nav -->
+
+        <div class="interact__content">
+          <div class="content__tab  js-tab-content active">
+            <h2>Chat</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
+          </div>
+
+          <div class="content__tab  js-tab-content">
+            <h2>Stellingen</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
+          </div>
+        </div><!-- .interact__content -->
+      </div><!-- .stream__interact -->
+    </div><!-- .stream -->
+
+    <script src="js/tabs.js"></script>
+  </body>
+</html>
