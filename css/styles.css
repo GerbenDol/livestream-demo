@@ -83,28 +83,6 @@ img[height] {
 
 
 /* =============================================================================
-  #VIDEO
-============================================================================= */
-.videoWrapper {
-  position: relative;
-  padding-bottom: 56.25%;
-  /* 16:9 */
-  height: 0;
-  width: 100%;
-}
-
-  .videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    background-color: #1e202a;
-  }
-
-
-/* =============================================================================
   #TYPOGRAPHY
 ============================================================================= */
 
@@ -115,46 +93,78 @@ img[height] {
 .stream {
 }
 
+@media (min-width: 1201px) {
+  .stream {
+    display: flex;
+  }
+}
+
+
 /* ##STREAM WATCH AREA =========================================== */
 /* =============================================================== */
 .stream__watch {}
 
 @media (min-width: 1201px) {
   .stream__watch {
-    float: left;
     width: calc(100% - 450px);
 
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    min-height: calc(100vh - 0px); /* Haal hier de hoogte van de header af */
+    height: calc(100vh - 0px); /* Haal hier de hoogte van de header af */
   }
 }
 
+
 /* ###STREAM WATCH VIDEO ============================== */
 .watch__video {}
+
+@media (max-width: 1200px) {
+  .video__player {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+    width: 100%;
+  }
+  
+    .video__player iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  
+      background-color: #1e202a;
+    }
+}
 
 @media (min-width: 1201px) {
   .watch__video {
     display: flex;
     flex-grow: 1;
-    align-items: center;
+    position: relative;
 
     background-color: #000000;
   }
+
+  .video__player {
+    position: absolute;
+  }
+
+  .video__player,
+  .video__player iframe {
+    width: 100%;
+    height: 100%;
+  }
 }
+
 
 /* ###STREAM WATCH INFO =============================== */
 .watch__info {
   padding: 15px;
 
   background-color: orange;
-}
-
-@media (min-width: 1201px) {
-  .watch__info {
-    
-  }
 }
 
   .watch__info h2 {
@@ -176,22 +186,28 @@ img[height] {
 
 @media (min-width: 1201px) {
   .stream__interact {
-    float: right;
+    position: relative;
     width: 450px;
+    min-height: calc(100vh - 0px); /* Haal hier de hoogte van de header af */
   }
 }
 
+
 /* ###STREAM INTERACT NAV ============================= */
 .interact__nav {
+  display: flex;
+  height: 60px; /* Ook aanpassen bij .interact__content */
+
   background-color: gold;
 }
 
   .interact__nav__item {
-    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 15px;
     width: calc(100% / 2);
 
-    text-align: center;
     text-decoration: none;
   }
 
@@ -201,8 +217,20 @@ img[height] {
     background-color: rgba(255, 255, 255, .25);
   }
 
+
 /* ###STREAM INTERACT CONTENT ========================= */
 .interact__content {}
+
+@media (min-width: 1201px) {
+  .interact__content {
+    position: absolute;
+    top: 60px; /* Even hoog als de .interact__nav */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow-y: auto;
+  }
+}
 
 
 /* ###STREAM INTERACT TABS ============================ */
