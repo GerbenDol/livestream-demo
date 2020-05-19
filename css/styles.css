@@ -93,7 +93,7 @@ img[height] {
 .stream {
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1001px) {
   .stream {
     display: flex;
   }
@@ -104,9 +104,9 @@ img[height] {
 /* =============================================================== */
 .stream__watch {}
 
-@media (min-width: 1201px) {
+@media (min-width: 1001px) {
   .stream__watch {
-    width: calc(100% - 450px);
+    width: calc(100% - 400px); /* Ook aanpassen bij .stream__interact */
 
     display: flex;
     justify-content: space-between;
@@ -119,7 +119,7 @@ img[height] {
 /* ###STREAM WATCH VIDEO ============================== */
 .watch__video {}
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   .video__player {
     position: relative;
     padding-bottom: 56.25%;
@@ -139,7 +139,7 @@ img[height] {
     }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: 1001px) {
   .watch__video {
     display: flex;
     flex-grow: 1;
@@ -184,10 +184,10 @@ img[height] {
 /* =============================================================== */
 .stream__interact {}
 
-@media (min-width: 1201px) {
+@media (min-width: 1001px) {
   .stream__interact {
     position: relative;
-    width: 450px;
+    width: 400px; /* Ook aanpassen bj .stream__watch */
     min-height: calc(100vh - 0px); /* Haal hier de hoogte van de header af */
   }
 }
@@ -221,7 +221,7 @@ img[height] {
 /* ###STREAM INTERACT CONTENT ========================= */
 .interact__content {}
 
-@media (min-width: 1201px) {
+@media (min-width: 1001px) {
   .interact__content {
     position: absolute;
     top: 60px; /* Even hoog als de .interact__nav */
