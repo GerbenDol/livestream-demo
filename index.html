@@ -8,7 +8,8 @@
     
     <title>Livestream</title>
 
-    <link rel="stylesheet" href="css/styles.css?v=3.0">
+    <link rel="stylesheet" href="css/styles.css?v=4.0">
+    <link href="fa/css/all.css" rel="stylesheet"> <!-- Load FontAwesome webfont -->
   </head>
 
   <body>
@@ -32,36 +33,152 @@
 
       <div class="stream__interact" id="js-tabs">
         <div class="interact__nav  clearfix">
-          <a class="interact__nav__item  js-tab-link active" href="#">Chat</a>
-          <a class="interact__nav__item  js-tab-link" href="#">Stellingen</a>
+          <a class="interact__nav__item  js-tab-link active" href="#"><i class="fas fa-comments"></i>Deelnemers</a>
+          <a class="interact__nav__item  js-tab-link" href="#"><i class="fas fa-poll"></i>Slido</a>
         </div><!-- .interact__nav -->
 
         <div class="interact__content">
           <div class="content__tab  js-tab-content active">
-            <h2>Chat</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
+            <div class="participants  js-Items js-chatUserList">
+              <ul>
+                <li class="participants__item  js-openConversation" attr-friendid="3">
+                  <span class="participants__name">Gerben Dol</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="4">
+                  <span class="participants__name">JanJochem Overgaauw</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="10">
+                  <span class="participants__name">Annemarie Kingma</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="11">
+                  <span class="participants__name">Annemarie2 Kingma</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="12">
+                  <span class="participants__name">Annemarie3 Kingma</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="16">
+                  <span class="participants__name">Sven Karsenbarg</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="19">
+                  <span class="participants__name">Dolf van Veen</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="27">
+                  <span class="participants__name">Michiel Minderhoud</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="29">
+                  <span class="participants__name">Danny Verbeek</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="31">
+                  <span class="participants__name">Rob van Haren</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="32">
+                  <span class="participants__name">Voornaam Houwing</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="3">
+                  <span class="participants__name">Gerben Dol</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="4">
+                  <span class="participants__name">JanJochem Overgaauw</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="10">
+                  <span class="participants__name">Annemarie Kingma</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="11">
+                  <span class="participants__name">Annemarie2 Kingma</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="12">
+                  <span class="participants__name">Annemarie3 Kingma</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="16">
+                  <span class="participants__name">Sven Karsenbarg</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="19">
+                  <span class="participants__name">Dolf van Veen</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="27">
+                  <span class="participants__name">Michiel Minderhoud</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="29">
+                  <span class="participants__name">Danny Verbeek</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="31">
+                  <span class="participants__name">Rob van Haren</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="32">
+                  <span class="participants__name">Voornaam Houwing</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="3">
+                  <span class="participants__name">Gerben Dol</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="4">
+                  <span class="participants__name">JanJochem Overgaauw</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="10">
+                  <span class="participants__name">Annemarie Kingma</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="11">
+                  <span class="participants__name">Annemarie2 Kingma</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="12">
+                  <span class="participants__name">Annemarie3 Kingma</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="16">
+                  <span class="participants__name">Sven Karsenbarg</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="19">
+                  <span class="participants__name">Dolf van Veen</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="27">
+                  <span class="participants__name">Michiel Minderhoud</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="29">
+                  <span class="participants__name">Danny Verbeek</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="31">
+                  <span class="participants__name">Rob van Haren</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="32">
+                  <span class="participants__name">Voornaam Houwing</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="3">
+                  <span class="participants__name">Gerben Dol</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="4">
+                  <span class="participants__name">JanJochem Overgaauw</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="10">
+                  <span class="participants__name">Annemarie Kingma</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="11">
+                  <span class="participants__name">Annemarie2 Kingma</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="12">
+                  <span class="participants__name">Annemarie3 Kingma</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="16">
+                  <span class="participants__name">Sven Karsenbarg</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="19">
+                  <span class="participants__name">Dolf van Veen</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="27">
+                  <span class="participants__name">Michiel Minderhoud</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="29">
+                  <span class="participants__name">Danny Verbeek</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="31">
+                  <span class="participants__name">Rob van Haren</span> <i class="fas fa-comment"></i>
+                </li>
+                <li class="participants__item  js-openConversation" attr-friendid="32">
+                  <span class="participants__name">Voornaam Houwing</span> <i class="fas fa-comment"></i>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="content__tab  js-tab-content">
-            <h2>Stellingen</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium fugit odit ipsum error tenetur nostrum laboriosam mollitia et incidunt praesentium doloribus sapiente, consequatur reiciendis dolore laudantium dicta! Veniam, ratione eligendi.</p>
+            <iframe class="slido" src="https://app.sli.do/event/5314iawi"></iframe>
           </div>
         </div><!-- .interact__content -->
       </div><!-- .stream__interact -->

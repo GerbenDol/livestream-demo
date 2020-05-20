@@ -93,7 +93,7 @@ img[height] {
 .stream {
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 1201px) {
   .stream {
     display: flex;
   }
@@ -104,9 +104,9 @@ img[height] {
 /* =============================================================== */
 .stream__watch {}
 
-@media (min-width: 1001px) {
+@media (min-width: 1201px) {
   .stream__watch {
-    width: calc(100% - 400px); /* Ook aanpassen bij .stream__interact */
+    width: calc(100% - 460px); /* Ook aanpassen bij .stream__interact */
 
     display: flex;
     justify-content: space-between;
@@ -119,7 +119,7 @@ img[height] {
 /* ###STREAM WATCH VIDEO ============================== */
 .watch__video {}
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .video__player {
     position: relative;
     padding-bottom: 56.25%;
@@ -139,7 +139,7 @@ img[height] {
     }
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 1201px) {
   .watch__video {
     display: flex;
     flex-grow: 1;
@@ -182,12 +182,21 @@ img[height] {
 
 /* ##STREAM INTERACT AREA ======================================== */
 /* =============================================================== */
-.stream__interact {}
+.stream__interact {
+  position: relative;
+}
 
-@media (min-width: 1001px) {
+@media (max-width: 1200px) {
   .stream__interact {
-    position: relative;
-    width: 400px; /* Ook aanpassen bj .stream__watch */
+    margin: 15px;
+
+    height: 90vh;
+  }
+}
+
+@media (min-width: 1201px) {
+  .stream__interact {
+    width: 460px; /* Ook aanpassen bj .stream__watch */
     min-height: calc(100vh - 0px); /* Haal hier de hoogte van de header af */
   }
 }
@@ -217,19 +226,19 @@ img[height] {
     background-color: rgba(255, 255, 255, .25);
   }
 
+    .interact__nav__item i {
+      margin-right: 5px;
+    }
+
 
 /* ###STREAM INTERACT CONTENT ========================= */
-.interact__content {}
-
-@media (min-width: 1001px) {
-  .interact__content {
-    position: absolute;
-    top: 60px; /* Even hoog als de .interact__nav */
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow-y: auto;
-  }
+.interact__content {
+  position: absolute;
+  top: 60px; /* Even hoog als de .interact__nav */
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
 }
 
 
@@ -240,4 +249,57 @@ img[height] {
 
 .content__tab.active {
   display: block;
+  height: 100%;
+}
+
+
+/* ###SLIDO =========================================== */
+.slido {
+  height: 100%;
+  width: 100%;
+}
+
+
+/* ###PARTICIPANT LIST ================================ */
+.participants {
+  padding: 4px;
+
+  background-color: #f4f4f4;
+}
+
+
+.participants__item {
+  position: relative;
+  padding: 8px;
+  padding-right: 32px;
+
+  cursor: pointer;
+
+  background-color: #ffffff;
+  border-radius: 4px;
+
+  transition: opacity 150ms ease-in-out;
+}
+
+.participants__item + .participants__item {
+  margin-top: 4px;
+}
+
+  .participants__item i {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+/* Hover effect */
+.participants__name {
+  display: inline-block;
+
+  transition: transform 150ms ease-in-out;
+}
+
+.participants__item:hover .participants__name {
+  transform: translateX(4px);
 }
