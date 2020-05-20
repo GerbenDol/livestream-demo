@@ -262,6 +262,7 @@ img[height] {
 
 /* ###PARTICIPANT LIST ================================ */
 .participants {
+  min-height: 100%;
   padding: 4px;
 
   background-color: #f4f4f4;
